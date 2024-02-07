@@ -1,11 +1,11 @@
 package ie.atu;
 
-class Burger implements Menuitem {
+class Pizza implements Menuitem {
     private String name;
     private double price;
     private String ingredients;
 
-    public Burger(String name, double price, String ingredients) {
+    public Pizza (String name, double price, String ingredients) {
         this.name = name;
         this.price = price;
         this.ingredients = ingredients;
@@ -20,10 +20,8 @@ class Burger implements Menuitem {
     public double getPrice() {
         return price;
     }
-
     @Override
     public String getDescription() {
         return ingredients;
     }
 }
-
